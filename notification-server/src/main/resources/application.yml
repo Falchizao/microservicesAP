@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: mqadmin
+    password: mqadmin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://microservices-eureka-server:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+#sentry:
+#  dsn: https://43d21ec7dacd450d932c0d057c6e2419@o1252962.ingest.sentry.io/6419274
+#  # Set traces-sample-rate to 1.0 to capture 100% of transactions for performance monitoring.
+#  # We recommend adjusting this value in production.
+#  traces-sample-rate: 1.0
